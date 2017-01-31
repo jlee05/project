@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SHOPPING CART</title>
+      <link rel="stylesheet" type="text/css" href="css/app.css">
+</head>
+ 
+<body>
+  <div class="container">
+<!--   <section id="top"></section> -->
+  <header class="header">
+    <h1>Shop Virtually<span>Browse &middot; Buy &middot; Be Kind</span></h1>
+ 
+    <nav class="top-menu">
+      <a href="index.html" class="current-menu">All</a>
+      <a href="#">Shirts</a>
+      <a href="#">Pants</a>
+      <a href="#">Shoes</a>
+    </nav>
+  </header>
+ 
+<!--         <div>SHOPPING CART</div> -->
+<section class="content">
+        <div class="items-list">
+            <h3>Shirts</h3>
+            <ul id="shirts">
+            </ul>
+ 
+            <h3>Pants</h3>
+            <ul id="pants">
+            </ul>
+ 
+            <h3>Shoes</h3>
+            <ul id="shoes">
+            </ul>
+        </div>
+        <div class="checkout">
+            <div class="checkoutContainer">
+                <h3>Checkout</h3>
+                <div id="checkout-total">$0.00</div>
+                <ul id="checkout-list">
+                </ul>
+                <form id="checkout-form" action="http://174.129.248.23/brainstation/shop/purchase" method="POST">
+                    <input type="hidden" name="total">
+                    <input type="hidden" name="items">
+                    <button class="primaryButton greyButton" id="purchase">Purchase</button>
+<!--                     <input type="button" class="primaryButton blueButton" id="purchase" value="Purchase"> -->
+                </form>
+            </div>
+        </div>
+ 
+    </section>
+ 
+  </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script type="text/javascript" src="js/app.js"></script>
+ 
+      <footer>
+            Copyright &copy; 2015
+        </footer>
+</body>
+ 
+</html>
